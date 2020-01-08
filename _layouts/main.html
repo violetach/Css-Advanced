@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Advanced</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<div class="site">
+		<header class="site-header">
+			<h1 class="site-heading">{{ site.title }}</h1>
+		</header>
+		<main class="site-main">
+			{% if page.title %}
+			<header>
+				<h2>{{ page.title }}</h2>
+			</header>
+			{% endif%}
+			{{ content }}
+		</main>
+		<footer class="site-footer">
+			<p>All rights reserved &copy; 2020-{{ site.github_username }}</p>
+		</footer>
+	</div>
+</body>
+</html>
